@@ -1,0 +1,27 @@
+\documentclass[]{article}
+\usepackage[english, magyar]{babel}
+\usepackage{lipsum}
+\usepackage{hulipsum}
+\usepackage{blindtext}
+\title{Lórum Ipse Cím}
+\begin{document}
+\maketitle
+\setlength{\parskip}{12pt}
+\setlength{\parindent}{0pt}
+\selectlanguage{english}
+\frenchspacing
+\Blindtext[2]
+\today
+
+\selectlanguage{magyar}
+\raggedleft
+\hulipsum[1-2]
+\today
+
+\foreignlanguage{latin}
+\raggedright
+\linespread{1.6}
+\selectfont
+\lipsum[1-2]
+\today
+\end{document}
